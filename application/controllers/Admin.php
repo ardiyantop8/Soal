@@ -27,6 +27,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/index', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
 	}
 
 	public function Download()
@@ -40,6 +41,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/download-tes', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
 	}
 
 	public function proses_download()
@@ -55,6 +57,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/download-tes', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
 	}
 
 	public function role()
@@ -70,6 +73,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/role', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
 	}
 	public function tambah_role()
 	{
@@ -102,6 +106,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/role-access', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
 	}
 
 	public function changeAccess()
@@ -140,6 +145,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/data_pemilih', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
 	}
 
 	public function datakandidat()
@@ -157,6 +163,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/data_kandidat', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
 	}
 
 	public function lihatkandidat($id_user)
@@ -169,6 +176,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/lihat_kandidat', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
 	}
 
 	public function hapus_data_pemilih($id_user)
@@ -210,6 +218,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/lihat_data_pemilih', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
 	}
 
 	public function Create_soal()
@@ -222,5 +231,7 @@ class Admin extends CI_Controller
 		$this->load->view('template/topbar', $data);
 		$this->load->view('admin/Create_soal', $data);
 		$this->load->view('template/footer');
+		$this->load->view('template/tutup');
+		$this->load->view('admin/AJAX/create');
 	}
 }
